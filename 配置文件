@@ -1,0 +1,68 @@
+[general]
+;general 模块内为一些通用的设置参数项
+server_check_url= http://cp.cloudflare.com/generate_204
+network_check_url=http://captive.apple.com/generate_204
+server_check_timeout=3000
+resource_parser_url= https://fastly.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8,239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32,17.0.0.0/8
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+udp_whitelist=1-442, 444-65535
+icmp_auto_reply=true
+fallback_udp_policy=direct
+geo_location_checker=disabled
+dns_reject_domain_behavior=nxdomain
+udp_drop_list=443
+[dns]
+;禁用系统 DNS（no-system） 以及 ipv6
+no-system
+no-ipv6
+;如需使用 DoH3，DNS over HTTP/3，请开启下面参数
+#prefer-doh3
+;如配置的上游 DNS 包含有去广告功能的 DNS 服务器，请勿使用该参数
+;circumvent-ipv4-answer=127.0.0.1, 0.0.0.0
+;circumvent-ipv6-answer=::
+;指定 dns 服务器，并发响应选取最优结果
+server=8.8.8.8
+server=223.5.5.5
+server=119.28.28.28
+server=/*.tencent.com/119.29.29.29
+server=/*.weixin.com/119.29.29.29
+address=/mtalk.google.com/108.177.125.188
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
+#doh-server=https://dns.alidns.com/dns-query,https://doh.pub/dns-query,https://dns.google/dns-query,https://cloudflare-dns.com/dns-query,https://dns.adguard.com/dns-query
+#doq-server=quic://c.passcloud.xyz:784,quic://i.passcloud.xyz:784
+[task_local]
+[policy]
+url-latency-benchmark=Fugitive, resource-tag-regex=^((?!一元).)*$, server-tag-regex=Hong Kong|Singapore|新加坡|香港, check-interval=1800, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute1/1818279.png
+#服务器远程订阅
+[server_remote]
+#规则分流远程订阅
+[filter_remote]
+https://raw.githubusercontent.com/wangameng66/Quantumult-/main/fenliu.txt, tag=分流, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+#rewrite 复写远程订阅
+[rewrite_remote]
+https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Cainiao.conf, tag=cainiao, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/amap.snippet, tag=amap, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/bilibili.snippet, tag=bilibili, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/youtube.snippet, tag=youtube, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/zhihu.snippet, tag=zhihu, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/MyBlockAds.conf#in=taobao+alicdn+pan.baidu.com+elemecdn+elecfans+api.m.jd.com+jd\.com+gab.122.gov.cn+api.coolapk.com+meituan+pinduoduo+tieba+ehome.esgcc.com.cn+163+127+126+weixin+xiaohongshu+gw.alicdn.com+home.mi.com+10086&inhn=taobao+alicdn+baidu+elecfans+elemecdn+jd+122+coolapk+meituan+pinduoduo+yangkeduo+tieba+esgcc+163+weixin+wechat+xiaohongshu+home.mi+10086, tag=MyBlockAds, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/TestFlight.conf, tag=TestFlight, update-interval=-1, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/WebPage.conf#in=baidu&inhn=baidu, tag=WebPage, update-interval=-1, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/AppUnlock.conf#in=baidu&inhn=baidu, tag=AppUnlock, update-interval=-1, opt-parser=true, enabled=true
+# 本地服务器部分
+[server_local]
+#本地分流规则(对于完全相同的某条规则，本地的将优先生效)
+[filter_local]
+geoip, cn, direct
+final, Fugitive
+#本地复写规则
+[rewrite_local]
+[mitm]
+passphrase = 35D44012
+p12 = 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
