@@ -231,3 +231,52 @@ HOST-SUFFIX,cm.kwad.com, reject
 host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
+
+
+host, static.ksecard.cn, reject
+host-suffix, m.citiccardcdn.citicbank.com, reject
+host-keyword, speedtest, proxy
+host, www.xiaohongshu.com, reject
+# 广告联盟
+HOST,is.snssdk.com,reject
+HOST,mi.gdt.qq.com,reject
+HOST,open.e.kuaishou.com,reject
+HOST-SUFFIX,pangolin-sdk-toutiao.com,reject
+HOST-SUFFIX,pangolin-sdk-toutiao-b.com,reject
+;高德
+HOST,amap-aos-info-nogw.amap.com,reject
+HOST,amdc.m.taobao.com,reject
+HOST,awaken.amap.com,reject
+HOST,free-aos-cdn-image.amap.com,reject
+# 工商银行 开屏广告
+HOST,pageviewp.icbc.com.cn,reject
+# 知乎
+HOST,appcloud.zhihu.com,reject
+HOST,appcloud2.in.zhihu.com,reject
+HOST,crash2.zhihu.com,reject
+HOST,mqtt.zhihu.com,reject
+HOST,sugar.zhihu.com,reject
+IP-CIDR,118.89.204.198/32,reject
+IP-CIDR,103.41.167.237/32,reject
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,reject
+// ip 规则
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+# > 屏蔽苹果系统更新
+host, ns.itunes.apple.com, reject
+host, appldnld.apple.com, reject
+host, mesu.apple.com, reject
+host, xp.apple.com, reject
+host, gdmf.apple.com, reject
+host,updates-http.cdn-apple.com,REJECT
+HOST-SUFFIX,iadsdk.apple.com, reject
+HOST-SUFFIX,ads.internal.unity3d.com, reject
+HOST-SUFFIX,ads.prd.ie.internal.unity3d.com, reject
+HOST-SUFFIX,unityads.unity3d.com, reject
+#outlok
+HOST,acdn.adnxs.com,REJECT
+HOST,mediation.adnxs.com,REJECT
+HOST,sin3-ib.adnxs.com,REJECT
