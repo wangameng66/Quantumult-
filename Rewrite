@@ -277,3 +277,5 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 # 须搭配分流: IP-CIDR, 180.76.76.200/32, REJECT
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd ^POST url-and-header script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
+# > 叮咚买菜 - maicai.api.ddxq.mobi
+^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ url reject
