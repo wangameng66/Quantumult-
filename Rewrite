@@ -1,5 +1,5 @@
 hostname = intl.iqiyi.com, act.vip.iqiyi.com , sofire.baidu.com, zhidao.baidu.com, issuecdn.baidupcs.com, mbd.baidu.com, boxer.baidu.com,baidu.com, afd.baidu.com, pan.baidu.com,appwk.baidu.com, *.tieba.baidu.com, m.baidu.com, mime.baidu.com, capi.douyucdn.cn, www.baidu.com, rtbapi.douyucdn.cn, staticlive.douyucdn.cn, creditcardapp.bankcomm.cn, rs.creditcard.cmbc.com.cn, static.creditcard.hxb.com.cn, m.creditcard.ecitic.com, cdn.poizon.com, cube.elemecdn.com, elemecdn.com, fuss10.elemecdn.com, fm.fenqile.com, business.msstatic.com, gfp.veta.naver.com, api.hanju.koudaibaobao.com, gab.122.gov.cn, m.360buyimg.com, jdread-api.jd.com, m.jd.com, ms.jr.jd.com, api.m.jd.com, router-app-api.jdcloud.com, smart.789.image.mucang.cn, 789.kakamobi.cn, appconf.mail.163.com,img.meituan.net, wmapi.meituan.com, flowplus.meituan.net, peisongapi.meituan.com, api.pinduoduo.com, adproxy.autohome.com, app-api.smzdm.com, homepage-api.smzdm.com, api.smzdm.com, ap*.smzdm.com, haojia.m.smzdm.com, news.l.qq.com , btrace.qq.com, tc.qq.com, acs.m.taobao.com, *.xima*.*, *.xmcdn.*, edith.xiaohongshu.com, pages.xiaohongshu.com, www.xiaohongshu.com, gw.alicdn.com, ossgw.alicdn.com, heic.alicdn.com, img.alicdn.com, mbs.boc.cn
-
+api.coolapk.com,c.tieba.baidu.com, tiebac.baidu.com
 # > 爱奇艺
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject
 ^https?:\/\/intl\.iqiyi\.com\/ad_external\/ url reject
@@ -270,3 +270,11 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^http:\/\/ems\.youku\.com\/imp\? url reject
 # > 中国银行
 ^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
+# 酷安 //api.coolapk.com
+^https:\/\/api.coolapk.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+^https:\/\/api.coolapk.com\/v6\/main\/(dataList|indexV8)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v\d\/search\?.*type=hotSearch url reject-dict
+# 贴吧全面去广告 //c.tieba.baidu.com, tiebac.baidu.com
+# 须搭配分流: IP-CIDR, 180.76.76.200/32, REJECT
+^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
+^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd ^POST url-and-header script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
