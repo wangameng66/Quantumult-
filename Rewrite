@@ -167,7 +167,6 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 # > 什么值得买值会员权益中心banner广告
 ^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
-
 # > 腾讯视频
 ^https://news.l.qq.com\/app\? url reject
 ^https?:\/\/btrace.qq.com url reject-200
@@ -193,45 +192,26 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ url reject-200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ url reject-200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ url reject-200
-# > 喜马拉雅_修复轮播Ad失效Bug
+# > 喜马拉雅
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF url reject
-# > 喜马拉雅_播放页_Live
 ^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/ url reject
-# > 喜马拉雅_MyInfo红点提醒
 ^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list url reject
-# > 喜马拉雅_屏蔽大红包Tips
 ^https?:\/\/.*\.xima.*\.com\/social-web\/bottomTabs\/dynamicEntrance\/status url reject
-# > 喜马拉雅_屏蔽gif弹窗Ad
 ^https?:\/\/.*\.xmcdn\.com\/\w{8}\/\w{4}-\w{16}\/.+gif$ url reject
-# > 喜马拉雅_屏蔽Aged请求
 ^https?:\/\/.*\.xima.*\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query) url reject
-# > 喜马拉雅_部分Tab弹窗
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant url reject
-# > 喜马拉雅_屏蔽红点提示
 ^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread url reject
-# > 喜马拉雅_屏蔽minor请求
 ^https?:\/\/.*\.xima.*\.com/mobile-user/minorProtection/pop url reject
-# > 喜马拉雅_屏蔽隐私搜集
 ^https?:\/\/.*\.xima.*\.com\/collector\/xl\/v\d url reject
-# > 喜马拉雅_屏蔽版本更新
 ^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck url reject
-# > 喜马拉雅_屏蔽开屏广告
 ^https?:\/\/(adse\.wsa|adse|adbehavior|xdcs-collector)\.xima.*\.com\/.* url reject
-# > 喜马拉雅_屏蔽位置请求
 ^https?:\/\/.*\.xima.*\.com\/mobile\/discovery\/v\d\/location url reject
-# > 喜马拉雅_屏蔽热搜词
 ^https?:\/\/.*\.xima.*\.com\/hotWord url reject
-# > 喜马拉雅_屏蔽搜索框定时_Ad
 ^https?:\/\/.*\.xima.*\.com\/guideWord url reject
-# > 喜马拉雅_屏蔽实时Ad请求
 ^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime url reject
-# > 喜马拉雅_屏蔽ting_Ad
 ^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? url reject
-# > 喜马拉雅_屏蔽首页滚动_Ad
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
-# > 喜马拉雅_屏蔽Tab页滚动_Ad
 ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
-# > 喜马拉雅_去除我的页面Ad_Tag
 ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
 # > 小红书
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config url script-response-body https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/xiaohongshu/xiaohongshu.ad.js
@@ -269,17 +249,16 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^http:\/\/ems\.youku\.com\/imp\? url reject
 # > 中国银行
 ^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
-# 酷安 //api.coolapk.com
+# > 酷安 //api.coolapk.com
 ^https:\/\/api.coolapk.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 ^https:\/\/api.coolapk.com\/v6\/main\/(dataList|indexV8)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
 ^https:\/\/api\.coolapk\.com\/v\d\/search\?.*type=hotSearch url reject-dict
-# 贴吧全面去广告 //c.tieba.baidu.com, tiebac.baidu.com
-# 须搭配分流: IP-CIDR, 180.76.76.200/32, REJECT
+# > 贴吧全面去广告 //c.tieba.baidu.com, tiebac.baidu.com
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd ^POST url-and-header script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
 # > 叮咚买菜 - maicai.api.ddxq.mobi
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ url reject
-# 网易云音乐
+# > 网易云音乐
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ad\/ url reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/sp\/flow url reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ios\/upgrade url reject-dict
@@ -295,7 +274,5 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/hotcomment\/collect url reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/middle\/clientcfg\/config url reject-dict
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/resource-exposure\/activity\/config url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get url reject-dict
-# > 网易云_搜索页下方热搜CARD[自行启用]
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/chart url reject-dict
+^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get url reject-dict^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/chart url reject-dict
 ^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/strategy\? url reject-dict
