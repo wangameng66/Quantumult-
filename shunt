@@ -233,7 +233,6 @@ host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
 
 
-host, static.ksecard.cn, reject
 host-suffix, m.citiccardcdn.citicbank.com, reject
 host-keyword, speedtest, proxy
 host, www.xiaohongshu.com, reject
