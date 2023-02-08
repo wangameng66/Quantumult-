@@ -258,22 +258,3 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd ^POST url-and-header script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
 # > 叮咚买菜 - maicai.api.ddxq.mobi
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ url reject
-# > 网易云音乐
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ad\/ url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/sp\/flow url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/ios\/upgrade url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/position\/show\/resource url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?eapi\/resource-exposure\/config url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/specialkeyword url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/link\/scene\/show\/resource url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/feed\/inserted url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/v1\/content\/exposure\/comment url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/rcmd\/keyword url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/default\/keyword url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/comment\/hotcomment\/collect url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/middle\/clientcfg\/config url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/resource-exposure\/activity\/config url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/vipcenter/tspopup\/get url reject-dict
-^https?:\/\/interface(\d)?\.music\.163\.com\/w?e?api\/search\/chart url reject-dict
-^https:\/\/interface3\.music\.163\.com\/eapi\/link\/position\/show\/strategy\? url reject-dict
