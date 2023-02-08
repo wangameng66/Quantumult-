@@ -234,7 +234,6 @@ host-keyword,p3.pstatp.com, reject
 
 
 host-suffix, m.citiccardcdn.citicbank.com, reject
-host-keyword, speedtest, proxy
 host, www.xiaohongshu.com, reject
 # 广告联盟
 HOST,is.snssdk.com,reject
