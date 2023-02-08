@@ -213,15 +213,6 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
 ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
 ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage url script-response-body https://raw.githubusercontent.com/ddgksf2013/Scripts/master/xmly_json.js
-# > 小红书
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config url script-response-body https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/xiaohongshu/xiaohongshu.ad.js
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/apple\/record* url reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage* url reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource* url reject
-^https:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches* url reject
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list url response-body items":\[.+\] response-body items":[]
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending url response-body queries":\[.+\] response-body queries":[]
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(open|get_style)\? url reject-array
 # > 闲鱼
 ^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ url reject-200
 ^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} url reject-200
