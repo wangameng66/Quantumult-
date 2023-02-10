@@ -232,6 +232,10 @@ host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
 
+# 微博 头像挂件
+HOST,new.vip.weibo.cn, reject
+HOST,vip.storage.weibo.com, reject
+
 
 host-suffix, m.citiccardcdn.citicbank.com, reject
 host, www.xiaohongshu.com, reject
