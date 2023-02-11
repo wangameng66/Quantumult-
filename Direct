@@ -1,6 +1,6 @@
-HOST, login-mq.iqiyi.com, direct
-HOST, 111.48.119.192, direct
-HOST, com.coolapk.app, direct
+HOST,login-mq.iqiyi.com, direct
+HOST,111.48.119.192, direct
+HOST,com.coolapk.app, direct
 HOST,ad.10010.com,Direct
 HOST,alt1-mtalk.google.com,Direct
 HOST,alt2-mtalk.google.com,Direct
