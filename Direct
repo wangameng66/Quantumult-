@@ -1,5 +1,6 @@
 HOST,login-mq.iqiyi.com, direct
 HOST,111.48.119.192, direct
+HOST, 124.64.199.9, direct
 HOST,com.coolapk.app, direct
 HOST,ad.10010.com,Direct
 HOST,alt1-mtalk.google.com,Direct
