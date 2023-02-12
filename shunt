@@ -171,6 +171,7 @@ HOST,ads-img-qc.xhscdn.com, reject
 HOST,ads-video-al.xhscdn.com, reject
 HOST,ads-video-qc.xhscdn.com, reject
 HOST,t-ads.xiaohongshu.com, reject
+HOST,www.xiaohongshu.com, reject
 # > 知乎
 USER-AGENT,AVOS*, reject
 HOST,appcloud2.in.zhihu.com, reject
@@ -231,14 +232,20 @@ HOST-SUFFIX,cm.kwad.com, reject
 host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
-
 # 微博 头像挂件
 HOST,new.vip.weibo.cn, reject
 HOST,vip.storage.weibo.com, reject
-
+# 数字联盟
+HOST-SUFFIX,shuzilm.cn,REJECT
 
 host-suffix, m.citiccardcdn.citicbank.com, reject
-host, www.xiaohongshu.com, reject
+# 网易云音乐
+HOST,gdt.qq.com,REJECT
+HOST,httpdns.n.netease.com,REJECT
+HOST,iadmat.nosdn.127.net,REJECT
+HOST,iadmusicmat.music.126.net,REJECT
+HOST,iadmusicmatvideo.music.126.net,REJECT
+HOST-SUFFIX,163jiasu.com,REJECT
 # 广告联盟
 HOST,is.snssdk.com,reject
 HOST,mi.gdt.qq.com,reject
