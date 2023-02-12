@@ -1,4 +1,4 @@
-hostname = intl.iqiyi.com,act.vip.iqiyi.com,sofire.baidu.com,zhidao.baidu.com,issuecdn.baidupcs.com,mbd.baidu.com,boxer.baidu.com,baidu.com,afd.baidu.com,pan.baidu.com,appwk.baidu.com,*.tieba.baidu.com,m.baidu.com,mime.baidu.com,capi.douyucdn.cn,www.baidu.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,creditcardapp.bankcomm.cn,rs.creditcard.cmbc.com.cn,static.creditcard.hxb.com.cn,m.creditcard.ecitic.com,cdn.poizon.com,cube.elemecdn.com,elemecdn.com,fuss10.elemecdn.com,fm.fenqile.com,business.msstatic.com,gfp.veta.naver.com,api.hanju.koudaibaobao.com,gab.122.gov.cn,m.360buyimg.com,jdread-api.jd.com,m.jd.com,ms.jr.jd.com,api.m.jd.com,router-app-api.jdcloud.com,smart.789.image.mucang.cn,789.kakamobi.cn,appconf.mail.163.com,img.meituan.net,wmapi.meituan.com,flowplus.meituan.net,peisongapi.meituan.com,api.pinduoduo.com,adproxy.autohome.com,app-api.smzdm.com,homepage-api.smzdm.com,api.smzdm.com,ap*.smzdm.com,haojia.m.smzdm.com,news.l.qq.com,btrace.qq.com,tc.qq.com,acs.m.taobao.com,*.xima*.*,*.xmcdn.*,edith.xiaohongshu.com,pages.xiaohongshu.com,gw.alicdn.com,ossgw.alicdn.com,heic.alicdn.com,img.alicdn.com,mbs.boc.cn,c.tieba.baidu.com,tiebac.baidu.com,api.coolapk.com,maicai.api.ddxq.mobi,edith.xiaohongshu.com,www.xiaohongshu.com,home.mi.com 
+hostname = intl.iqiyi.com,act.vip.iqiyi.com,sofire.baidu.com,zhidao.baidu.com,issuecdn.baidupcs.com,mbd.baidu.com,boxer.baidu.com,baidu.com,afd.baidu.com,pan.baidu.com,appwk.baidu.com,*.tieba.baidu.com,m.baidu.com,mime.baidu.com,capi.douyucdn.cn,www.baidu.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,creditcardapp.bankcomm.cn,rs.creditcard.cmbc.com.cn,static.creditcard.hxb.com.cn,m.creditcard.ecitic.com,cdn.poizon.com,cube.elemecdn.com,elemecdn.com,fuss10.elemecdn.com,fm.fenqile.com,business.msstatic.com,gfp.veta.naver.com,api.hanju.koudaibaobao.com,gab.122.gov.cn,m.360buyimg.com,jdread-api.jd.com,m.jd.com,ms.jr.jd.com,api.m.jd.com,router-app-api.jdcloud.com,smart.789.image.mucang.cn,789.kakamobi.cn,appconf.mail.163.com,img.meituan.net,wmapi.meituan.com,flowplus.meituan.net,peisongapi.meituan.com,api.pinduoduo.com,adproxy.autohome.com,app-api.smzdm.com,homepage-api.smzdm.com,api.smzdm.com,ap*.smzdm.com,haojia.m.smzdm.com,news.l.qq.com,btrace.qq.com,tc.qq.com,acs.m.taobao.com,*.xima*.*,*.xmcdn.*,edith.xiaohongshu.com,pages.xiaohongshu.com,gw.alicdn.com,ossgw.alicdn.com,heic.alicdn.com,img.alicdn.com,mbs.boc.cn,c.tieba.baidu.com,tiebac.baidu.com,api.coolapk.com,maicai.api.ddxq.mobi,edith.xiaohongshu.com,www.xiaohongshu.com,home.mi.com,mp.weixin.qq.com,weixin110.qq.com,security.wechat.com 
 # > 爱奇艺
 ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject
 ^https?:\/\/intl\.iqiyi\.com\/ad_external\/ url reject
@@ -65,16 +65,11 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 # > 得物
 ^https?:\/\/cdn\.poizon\.com\/node-common\/.*.jpg url reject-200
 # > 饿了么
-^https?:\/\/elemecdn.com\/.+\/sitemap url reject
-^https?:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} url reject
-^https?:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} url reject
-^https?:\/\/fuss10\.elemecdn\.com\/.+?\.mp4 url reject-img
-^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_1\d{3},h_2\d{3}\/format,webp\/ url reject
-^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ url reject
-^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ url reject
-^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? url reject
-^https?:\/\/elemecdn\.com\/.+?\/sitemap url reject-img
-^https?:\/\/www1\.elecfans\.com\/www\/delivery\/ url reject
+^https:\/\/elemecdn.com\/.+\/sitemap url reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} url reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} url reject
+^https:\/\/fuss10.elemecdn.com\/.+\.mp4 url reject
+^https:\/\/www1.elecfans.com\/www\/delivery url reject
 # > 分期乐
 ^https?:\/\/fm\.fenqile\.com\/routev2\/other\/getfloatAd\.json url reject-img
 ^https?:\/\/fm\.fenqile\.com\/routev2\/other\/startImg\.json url reject-img
@@ -241,9 +236,10 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 # > 中国银行
 ^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
 # > 酷安 //api.coolapk.com
-^https:\/\/api.coolapk.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-^https:\/\/api.coolapk.com\/v6\/main\/(dataList|indexV8)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
-^https:\/\/api\.coolapk\.com\/v\d\/search\?.*type=hotSearch url reject-dict
+^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/coolapk.js
+^https:\/\/api\.coolapk\.com\/v6\/search\?.+type=hotSearch url reject-dict
 # > 贴吧全面去广告 //c.tieba.baidu.com, tiebac.baidu.com
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaJson.js
 ^http(:\/\/c\.tieba|s:\/\/tiebac)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd ^POST url-and-header script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/baidu/tiebaProto.js
@@ -257,3 +253,10 @@ https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 url reject
 ^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? url reject-dict
 # 米家 //home.mi.com
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/banner\? url reject
+# 微信 //mp.weixin.qq.com, weixin110.qq.com, security.wechat.com
+## 去除公众号广告 //mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad\? url response-body "advertisement_num" : \d*, "advertisement_info" : \[.*\], response-body "advertisement_num" : 0, "advertisement_info" : [],
+## 去除公众号商品推广 //mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? url reject-dict
+## 跳过微信中转页面,解除被封禁链接 //weixin110.qq.com, security.wechat.com
+^https\:\/\/(weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/wechat/wechat110.js
