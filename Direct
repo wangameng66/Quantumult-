@@ -2,6 +2,9 @@ HOST,login-mq.iqiyi.com,Direct
 HOST,111.48.119.192,Direct
 HOST,124.64.199.9,Direct
 HOST,com.coolapk.app,Direct
+HOST-keyword, weather-data.apple.com,Direct
+HOST-keyword, weather-map.apple.com,Direct
+HOST-keyword, weather-analytics-events.apple.com,Direct
 HOST,ad.10010.com,Direct
 HOST,alt1-mtalk.google.com,Direct
 HOST,alt2-mtalk.google.com,Direct
