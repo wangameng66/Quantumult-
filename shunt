@@ -147,9 +147,16 @@ host-suffix, cupid.iqiyi.com, reject
 host, f74f7f7765f8a2f6.ngaa.net.cn, reject
 host, ef-dongfeng.tanx.com, reject
 host, iqiyim.adtrack.enlightent.cn, reject
-HOST,dig.bdurl.net, reject
-HOST,ads3-normal-lq.zijieapi.com, reject
-HOST,ads5-normal-lq.zijieapi.com, reject
+HOST, dig.bdurl.net, reject
+HOST, ads3-normal-lq.zijieapi.com, reject
+HOST, ads5-normal-lq.zijieapi.com, reject
+HOST, t7z.cupid.iqiyi.com, reject
+HOST, t7z.cupid.ptqy.gitv.tv, reject
+IP-CIDR, 203.107.63.154/32, reject
+IP-CIDR, 101.227.97.240/32, reject
+IP-CIDR, 101.227.200.11/32, reject
+IP-CIDR, 101.227.200.28/32, reject
+IP-CIDR, 124.192.153.42/32, reject
 # > 喜马拉雅
 HOST,adbehavior.ximalaya.com, reject
 HOST,adwbs.ximalaya.com, reject
@@ -165,13 +172,12 @@ HOST-SUFFIX,adse.ximalaya.com, reject
 HOST-SUFFIX,adse.wsa.ximalaya.com, reject
 HOST-SUFFIX,adbehavior.wsa.ximalaya.com, reject
 HOST-SUFFIX,adsebs.ximalaya.com, reject
-HOST-SUFFIX,adbs.ximalaya.com, reject
-# >小红书
+HOST-SUFFIX,adbs.ximalaya.com, reject 
+# > 小红书
 HOST,ads-img-qc.xhscdn.com, reject
 HOST,ads-video-al.xhscdn.com, reject
 HOST,ads-video-qc.xhscdn.com, reject
 HOST,t-ads.xiaohongshu.com, reject
-HOST,www.xiaohongshu.com, reject
 # > 知乎
 USER-AGENT,AVOS*, reject
 HOST,appcloud2.in.zhihu.com, reject
@@ -235,6 +241,59 @@ host-keyword,p3.pstatp.com, reject
 # 微博 头像挂件
 HOST,new.vip.weibo.cn, reject
 HOST,vip.storage.weibo.com, reject
+# > 微博
+HOST-KEYWORD,fastimage.uve.weibo.com, reject
+HOST-KEYWORD,adimg.uve.weibo.com, reject
+HOST-SUFFIX,adimg.vue.weibo.com, reject
+HOST-SUFFIX,zymo.mps.weibo.com, reject
+HOST-SUFFIX,weibomingzi.com, reject
+HOST-SUFFIX,sdkapp.uve.weibo.com, reject
+HOST-SUFFIX,s.alitui.weibo.com, reject
+HOST-SUFFIX,promote.biz.weibo.cn, reject
+HOST-SUFFIX,gw5.push.mcp.weibo.cn, reject
+HOST-SUFFIX,game.weibo.cn, reject
+HOST-SUFFIX,biz.weibo.com, reject
+HOST-SUFFIX,adimg.uve.weibo.com, reject
+HOST-SUFFIX,game.weibo.com, reject
+HOST-SUFFIX,gw6.push.mcp.weibo.cn, reject
+HOST-KEYWORD,ads.viber.com, reject
+HOST-KEYWORD,ads-d.viber.com, reject
+HOST-KEYWORD,ads.aws.viber.com, reject
+HOST-SUFFIX,alitui.weibo.com, reject
+HOST,adimg.uve.weibo.com, reject
+HOST,adimg.vue.weibo.com, reject
+HOST-KEYWORD,adimg.uve.weibo.com,REJECT
+HOST-KEYWORD,alitui.weibo.com,REJECT
+HOST-KEYWORD,biz.weibo.com,REJECT
+HOST-KEYWORD,game.weibo.cn,REJECT
+HOST-KEYWORD,game.weibo.com,REJECT
+HOST-KEYWORD,gw5.push.mcp.weibo.cn,REJECT
+HOST-KEYWORD,gw6.push.mcp.weibo.cn,REJECT
+HOST-KEYWORD,promote.biz.weibo.cn,REJECT
+HOST-KEYWORD,s.alitui.weibo.com,REJECT
+HOST-KEYWORD,sdkapp.uve.weibo.com,REJECT
+HOST-KEYWORD,weibomingzi.com,REJECT
+HOST-KEYWORD,zymo.mps.weibo.com,REJECT
+HOST-KEYWORD,adimg.vue.weibo.com,REJECT
+HOST-KEYWORD,dp.im.weibo.cn,REJECT
+HOST-KEYWORD,m.game.weibo.cn,REJECT
+HOST-KEYWORD,c.biz.weibo.com,REJECT
+HOST-KEYWORD,c.wcpt.biz.weibo.com,REJECT
+HOST-KEYWORD,click.uve.weibo.com,REJECT
+HOST-KEYWORD,wax.weibo.com,REJECT
+HOST-KEYWORD,wbapp.uve.weibo.com,REJECT
+HOST-KEYWORD,widget.weibo.com,REJECT
+HOST-KEYWORD,zc.biz.weibo.com,REJECT
+HOST-KEYWORD,dsp.edm.weibo.cn,REJECT
+HOST-KEYWORD,alitui.weibo.com.cn,REJECT
+HOST-KEYWORD,biz.weibo.com.cn,REJECT
+HOST-KEYWORD,game.weibo.com.cn,REJECT
+HOST-KEYWORD,tui.weibo.com,REJECT
+HOST-KEYWORD,wax.weibo.com.cn,REJECT
+HOST-KEYWORD,ad.weibo.com,REJECT
+HOST-KEYWORD,adstrategy.biz.weibo.com,REJECT
+# HOST-KEYWORD,s.weibo.com,REJECT
+HOST-KEYWORD,vs.biz.weibo.com,REJECT
 # 数字联盟
 HOST-SUFFIX,shuzilm.cn,REJECT
 
