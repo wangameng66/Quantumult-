@@ -1,0 +1,8 @@
+# 百度贴吧 cookie
+https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+# 哔哩哔哩 app或网页 https://www.bilibili.com/
+^https:\/\/app\.bilibili\.com\/x\/resource\/domain\? url script-request-header https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js
+^https:\/\/m.bilibili.com/$ url script-request-header https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js
+
+hostname = c.tieba.baidu.com, app.bilibili.com, m.bilibili.com
